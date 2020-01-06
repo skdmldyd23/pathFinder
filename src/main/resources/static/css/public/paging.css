@@ -1,0 +1,41 @@
+#page {
+  margin: 20px auto;
+  color: #666;
+  display: block;
+  text-align: center;
+}
+
+#page li {
+  display: inline-block;
+  min-width: 30px;
+  height: 28px;
+  cursor: pointer;
+  color: #666;
+  font-size: 13px;
+  line-height: 28px;
+  background-color: #f9f9f9;
+  border: 1px solid #dce0e0;
+  text-align: center;
+  margin: 0 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/* 이전 버튼 다음버튼 */
+.xl-nextPage,
+.xl-prevPage {
+  width: 60px;
+  color: #3d9970;
+  height: 28px;
+}
+/* 선택 되지 않은 버튼 */
+#page li.xl-disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+}
+/* 선택된 버튼 */
+#page li.xl-active {
+  background-color: #3d9970;
+  border-color: #3d9970;
+  color: #fff;
+}

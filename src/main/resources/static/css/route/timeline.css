@@ -1,0 +1,119 @@
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"); */
+
+.tmline ul {
+  margin: 0;
+  margin-top: 10px;
+  list-style: none;
+  position: relative;
+  padding: 1px 50px 1px 80px;
+  color: #000000;
+  font-size: 13px;
+}
+
+.tmline ul:before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  border-left: 1px dashed #ccd5db;
+}
+
+.tmline ul li {
+  position: relative;
+  margin-left: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  border-radius: 6px;
+  width: 100%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.08);
+}
+
+.tmline ul li:not(:first-child) {
+  margin-top: 15px;
+}
+
+.tmline ul li > span {
+  width: 2px;
+  height: 100%;
+  background: #ccd5db;
+  left: -30px;
+  top: 0;
+  position: absolute;
+}
+
+.tmline ul li > span:before,
+.tmline ul li > span:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #2790b0;
+  position: absolute;
+  background: #2790b0;
+  left: -3px;
+  top: 0;
+}
+
+.tmline ul li span:after {
+  top: 100%;
+}
+
+.tmline ul li > div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.tmline div .title {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.tmline div .info {
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.tmline div .type {
+  font-weight: 400;
+  margin-top: 3px;
+  /* font-size: 13px; */
+}
+
+.tmline div > div {
+  /* margin-top: 5px; */
+}
+
+.tmline span.number {
+  height: 100%;
+}
+
+.tmline span.number span {
+  position: absolute;
+  font-size: 11px;
+  left: -65px;
+  font-weight: 400;
+}
+
+.tmline span.number span:first-child {
+  top: -10%;
+}
+
+.tmline span.number span:last-child {
+  top: 105%;
+}
+
+/* Custom Css */
+#routeResult {
+  min-height: 34vh;
+  max-height: 34vh;
+  overflow: overlay;
+}
+
+#tmlineResult {
+  border-top: 1px dashed #ccd5db;
+  padding: 8px 10px;
+}
+
+#tmlineResult span {
+  padding-left: 4px;
+}

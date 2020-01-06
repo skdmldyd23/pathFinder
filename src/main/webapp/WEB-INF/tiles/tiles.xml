@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<!-- main -->
+	<definition name="layouts-tiles" template="/WEB-INF/jsp/layout/layouts.jsp">
+		<put-attribute name="header" value="/WEB-INF/jsp/layout/header.jsp" />
+		<put-attribute name="nav" value="/WEB-INF/jsp/layout/nav.jsp" />
+		<put-attribute name="left" value="/WEB-INF/jsp/layout/left.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/layout/footer.jsp" />
+	</definition>
+
+	<definition name="/login">
+		<put-attribute name="body" value="/WEB-INF/jsp/defaultpage/login.jsp" />
+	</definition>
+
+	<definition name="/error">
+		<put-attribute name="body" value="/WEB-INF/jsp/defaultpage/error.jsp" />
+	</definition>
+
+	<definition name="/*" extends="layouts-tiles">
+		<put-attribute name="body" value="/WEB-INF/jsp/{1}.jsp" />
+	</definition>
+
+	<definition name="/admin/*" extends="layouts-tiles">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/{1}.jsp" />
+	</definition>
+</tiles-definitions>
