@@ -1,7 +1,9 @@
 ## 지운것들 
 
 **application.properties에서 db(몽고랑 마리아)랑 s3 넣기**
+
 **Branch js에서KakaoAK 넣기**
+
 **start.sh에 아이디 넣기**
 
 ## 배송비 산출 공식
